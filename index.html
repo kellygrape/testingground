@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I-Frame Tester</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>
+        Testing Ground for Accessibility Issues
+    </h1>
+
+    <p><a href="framed.html">Load this page in an iframe to test.</a></p>
+
+    <h2>Error message will appear below</h2>
+    <p class="error" aria-live="polite" id="showMe"></p>
+
+    <button id="click">Test message one</button>
+    <button id="click2">Test message two</button>
+    <button id="clear">Clear message</button>
+    <script>
+        document.querySelector('#click').addEventListener('click', () =>
+            document.querySelector('#showMe').innerHTML = "Rudolph the red nosed reindeer";
+        });
+        document.querySelector('#click2').addEventListener('click', () =>
+            document.querySelector('#showMe').innerHTML = "Most wonderful time of the year";
+        });
+        document.querySelector('#clear').addEventListener('click', () =>
+            document.querySelector('#showMe').innerHTML = "";
+        });
+
+    </script>
+</body>
+
+</html>
