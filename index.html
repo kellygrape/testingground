@@ -24,13 +24,13 @@
     <button id="click2">Test message two</button>
     <button id="clear">Clear message</button>
     <script>
-        document.querySelector('#click').addEventListener('click', () =>
+        document.querySelector('#click').addEventListener('click', () => {
             document.querySelector('#showMe').innerHTML = "Rudolph the red nosed reindeer";
         });
-        document.querySelector('#click2').addEventListener('click', () =>
+        document.querySelector('#click2').addEventListener('click', () => {
             document.querySelector('#showMe').innerHTML = "Most wonderful time of the year";
         });
-        document.querySelector('#clear').addEventListener('click', () =>
+        document.querySelector('#clear').addEventListener('click', () => {
             document.querySelector('#showMe').innerHTML = "";
         });
 
