@@ -7,19 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>I-Frame Tester</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
 
-<body class="home">
+<body class="framed">
     <header>
         <h1>
             Testing Ground for Accessibility Issues
         </h1>
     </header>
-
     <main>
+        <h1>Iframe</h1>
+        <iframe src="index.html" frameborder="0">
+        </iframe>
 
-        <p><a href="framed.html">Load this page in an iframe to test.</a></p>
 
+        <h1>Not Iframe</h1>
         <h2>Error message will appear below</h2>
         <p class="error" aria-live="polite" id="showMe"></p>
 
